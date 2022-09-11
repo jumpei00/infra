@@ -31,3 +31,9 @@ variable "remote_backend_bucket_name" {
   description = "Remote backend bucket name"
   type        = string
 }
+
+# <--- Artifact Registry log bucket --->
+variable "artifact_registry_log_bucket_names" {
+  description = "Artifact Registry bucket names"
+  type        = list(string)
+}
