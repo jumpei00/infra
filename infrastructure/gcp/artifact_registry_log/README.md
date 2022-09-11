@@ -11,7 +11,7 @@ No providers.
 
 | Name | Source | Version |
 |------|--------|---------|
-| <a name="module_terraform_state_bucket"></a> [terraform\_state\_bucket](#module\_terraform\_state\_bucket) | ../../../resource/gcp/gcs/ | n/a |
+| <a name="module_artifact_registry_log_bucket"></a> [artifact\_registry\_log\_bucket](#module\_artifact\_registry\_log\_bucket) | ../../../resource/gcp/gcs/ | n/a |
 
 ## Resources
 
@@ -21,7 +21,7 @@ No resources.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_bucket_name"></a> [bucket\_name](#input\_bucket\_name) | Remote backend bucket name | `string` | `""` | no |
+| <a name="input_bucket_names"></a> [bucket\_names](#input\_bucket\_names) | Remote backend bucket name | `list(string)` | `[]` | no |
 | <a name="input_location"></a> [location](#input\_location) | Bucket location | `string` | `""` | no |
 | <a name="input_prefix"></a> [prefix](#input\_prefix) | Bucket name prefix | `string` | `""` | no |
 | <a name="input_project_id"></a> [project\_id](#input\_project\_id) | This project id | `string` | `""` | no |
@@ -30,6 +30,6 @@ No resources.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_bucket_name"></a> [bucket\_name](#output\_bucket\_name) | Bucket name |
-| <a name="output_bucket_url"></a> [bucket\_url](#output\_bucket\_url) | Bucket url |
+| <a name="output_bucket_names"></a> [bucket\_names](#output\_bucket\_names) | Bucket names |
+| <a name="output_bucket_urls"></a> [bucket\_urls](#output\_bucket\_urls) | Bucket urls |
 <!-- END_TF_DOCS -->

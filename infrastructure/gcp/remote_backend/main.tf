@@ -1,6 +1,6 @@
 # <--- terraformのstateファイルを保存するバケットを定義 ---> #
 module "terraform_state_bucket" {
-  source = "../../../resource/gcp/storage/gcs"
+  source = "../../../resource/gcp/gcs/"
 
   project_id = var.project_id
 
@@ -10,6 +10,6 @@ module "terraform_state_bucket" {
   names = [var.bucket_name]
 
   versioning = {
-    "${var.bucket_name}" : true
+    "var.bucket_name" : true
   }
 }

@@ -8,3 +8,14 @@ module "remote_backend" {
   
   bucket_name = var.remote_backend_bucket_name
 }
+
+module "artifact_registry_log" {
+  source = "../../../infrastructure/gcp/artifact_registry_log"
+
+  project_id = var.project
+
+  location = var.bucket_location
+  prefix = var.bucket_prefix
+
+  bucket_names = var.artifact_registry_log_bucket_names
+}
