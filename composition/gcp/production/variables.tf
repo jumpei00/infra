@@ -37,3 +37,14 @@ variable "artifact_registry_log_bucket_names" {
   description = "Artifact Registry bucket names"
   type        = list(string)
 }
+
+# <--- Artifact Registry Repository --->
+variable "artifact_registry_repository_names" {
+  description = "Artifact Registry repository names"
+  type        = list(string)
+}
+
+variable "artifact_registry_repository_format" {
+  description = "Artifact Registry repository formats"
+  type        = string
+}

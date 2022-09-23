@@ -19,3 +19,7 @@ remote_backend_bucket_name = "terraform-remote-backend"
 
 # <--- Artifact Registry log bucket --->
 artifact_registry_log_bucket_names = ["artifact-registry-backend-build-log", "artifact-registry-frontend-build-log"]
+
+# <--- Artifact Registry Repository --->
+artifact_registry_repository_names   = ["backend", "frontend"]
+artifact_registry_repository_format = "DOCKER"
